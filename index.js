@@ -1,12 +1,20 @@
+//define variables
 let firstCard = 10
-let secondCard = 9
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackjack = false
+let isAlive = true
+let message = ""
 
-sum = firstCard + secondCard
-
+//check the cards
 if (sum <= 20) {
-    console.log("Do you want to draw a new card? 🙂")
+    message = "Do you want to draw a new card? 🙂"
 } else if (sum === 21) {
-    console.log("Wohoo, you've got Blackjack! 🥳")
+    message = "Wohoo, you've got Blackjack! 🥳"
+    hasBlackjack = true
 } else {
-    console.log("You're out of the game! 😭")
+    message = "You're out of the game! 😭"
+    isAlive = false
 }
+
+console.log(message)
