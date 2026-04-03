@@ -1,11 +1,13 @@
 //define variables
 let firstCard = 9
-let secondCard = 11
+let secondCard = 5
 let sum = firstCard + secondCard
 let hasBlackjack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
 
 //check the cards
 function startGame() {
@@ -20,4 +22,6 @@ function startGame() {
     }
 
     messageEl.textContent = message
+    sumEl.textContent = "Sum: " + sum
+    cardsEl.textContent = "Sum: " + firstCard + ", " + secondCard 
 }
