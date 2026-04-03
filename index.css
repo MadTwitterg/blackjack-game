@@ -22,7 +22,7 @@ button {
     height: 30px;
     background: goldenrod;
     padding: 5px 0;
-    font-weight: bold;
+    font-weight: bolder;
     border: none;
     border-radius: 2px;
 }
