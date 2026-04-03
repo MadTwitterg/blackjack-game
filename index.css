@@ -22,7 +22,15 @@ button {
     height: 30px;
     background: goldenrod;
     padding: 5px 0;
+    margin: 10px 0;
     font-weight: bolder;
     border: none;
     border-radius: 2px;
+}
+
+#btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
