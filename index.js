@@ -1,6 +1,6 @@
 //define variables
-let firstCard = 11
-let secondCard = 5
+let firstCard = 10
+let secondCard = 6
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackjack = false
@@ -27,16 +27,21 @@ function renderGame() {
         isAlive = false
     }
 
+    //render cards
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + ", "
+    }
+
     //display messages
     messageEl.textContent = message
     sumEl.textContent = "Sum: " + sum
-    cardsEl.textContent = "Sum: " + cards[0] + ", " + cards[1] 
 }
 
 //new card
 function newCard() {
-    console.log("Drawing a new card from the deck!")
     let card = 5
     sum += card
+    cards.push(card)
     renderGame()
 }
